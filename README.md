@@ -8,3 +8,26 @@
 Фановая функциональность коробки, предоставляется в ответ на любой безвозмезддный или членский взнос
 - фото на gameboy camera с последующей отправкой на почту, в телегу или печатью на чековой ленте
 - печать "пожеланий" на чековой ленте
+
+## Как настроить окружение
+
+1. Ставим openocd (Если openocd в Platform IO когда-нибудь заработает — этот пункт можно пропустить.)
+```bash
+sudo apt install openocd
+```
+
+2. Ставим VSCode:
+```bash
+sudo snap install code --classic
+```
+  Если не стоит Snapd:
+```bash
+sudo apt install snapd
+```
+
+3. Ставим Platform IO:
+  Открываем VSCode, открываем встроенный терминал в VSCode (Ctrl+P): 
+```bash
+ext install platformio.platformio-ide
+```
+4. Добавляем в Platforms ST STM32
